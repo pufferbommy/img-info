@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- poppinsFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- myCSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Info</title>
+  </head>
+  <body>
+    <div class="drag-and-drop-area">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100"
+        height="100"
+        fill="#1f91d3"
+        viewBox="0 0 256 256"
+      >
+        <rect width="256" height="256" fill="none"></rect>
+        <polyline
+          points="152 32 152 88 208 88"
+          fill="none"
+          stroke="#1f91d3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <path
+          d="M176,224h24a8,8,0,0,0,8-8V88L152,32H56a8,8,0,0,0-8,8v88"
+          fill="none"
+          stroke="#1f91d3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <path
+          d="M65.7,168H60a28,28,0,0,0,0,56h48a44,44,0,1,0-44-44"
+          fill="none"
+          stroke="#43adeb"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+      <h1>Drag & Drop to Upload Image</h1>
+      <span>OR</span>
+      <button class="browse-file-btn">Browse Image</button>
+      <input type="file" hidden accept="image/*" />
+    </div>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__info">
+        <div class="modal__info-img">
+          <img src="" alt="" />
+        </div>
+        <div class="modal__info-text">
+          <div class="result">
+            <h2 class="result_file-name"></h2>
+            <p class="result_file-size"></p>
+            <p class="result_file-extension"></p>
+          </div>
+          <div class="control">
+            <button>Upload Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
